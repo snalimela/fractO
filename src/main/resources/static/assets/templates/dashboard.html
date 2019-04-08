@@ -1,0 +1,277 @@
+<style>
+@media (min-width: 576px){
+#propertyModal .modal-dialog {
+    max-width: 640px;
+    margin: 1.75rem auto;
+}
+}
+</style>
+<div class="sidebar" data-color="purple" data-background-color="white" data-image="./assets/images/sidebar-1.jpg">
+  <div class="logo">
+    <a href="/" class="simple-text logo-normal">
+      FractO
+    </a>
+  </div>
+  <div class="sidebar-wrapper">
+    <ul class="nav">
+      <li class="nav-item active  ">
+        <a class="nav-link" href="#dashboard">
+          <i class="material-icons">dashboard</i>
+          <p>Dashboard</p>
+        </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#properties">
+          <i class="material-icons">domain</i>
+          <p>Properties</p>
+        </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#notifications">
+          <i class="material-icons">notifications</i>
+          <p>Notifications</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+<div class="main-panel">
+  <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+    <div class="container-fluid">
+      <div class="navbar-wrapper">
+        <a class="navbar-brand" href="#pablo">Dashboard</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end">
+        <form class="navbar-form">
+          <div class="input-group no-border">
+            <input type="text" value="" class="form-control" placeholder="Search...">
+            <button type="submit" class="btn btn-white btn-round btn-just-icon">
+              <i class="material-icons">search</i>
+              <div class="ripple-container"></div>
+            </button>
+          </div>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="material-icons">notifications</i>
+              <span class="notification">5</span>
+              <p class="d-lg-none d-md-block">
+                Some Actions
+              </p>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+       		  <a class="dropdown-item" href="#">Live Oak Manor Apartments owner willing to sell his share. Are you interested?. Please visit here</a>
+              <a class="dropdown-item" href="#">A new sale announcement in "AUTUMN WOODS APARTMENTS". Hurry Up.</a>
+              <a class="dropdown-item" href="#">Now "URBAN LOFT STYLE HOUSE - NATL REGISTER DISTRICT" residential property is part of FRACTO. Please have a look</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="material-icons">person</i>
+              <p class="d-lg-none d-md-block">
+                Account
+              </p>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">My Properties</a>
+              <a class="dropdown-item" href="#">Settings</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item logout" href="#">Log out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card card-stats">
+            <div class="card-header card-header-warning card-header-icon">
+              <div class="card-icon">
+                <i class="material-icons">bar_chart</i>
+              </div>
+              <p class="card-category">Invested Amount($)</p>
+              <h3 id="capital-amount" class="card-title"></h3>
+            </div>
+            <div class="card-footer">
+              <div class="card-category">
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card card-stats">
+            <div class="card-header card-header-success card-header-icon">
+              <div class="card-icon">
+                <i class="material-icons">money</i>
+              </div>
+              <p class="card-category">Total Revenue</p>
+              <h3 id="increased-amount" class="card-title"></h3>
+            </div>
+            <div class="card-footer">
+              <div class="card-category">
+                <span  class="text-success stats"><i id ="growth" class="fa fa-long-arrow-up"></i>  </span> Growth.
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card card-stats">
+            <div class="card-header card-header-danger card-header-icon">
+              <div class="card-icon">
+                <i class="material-icons">info_outline</i>
+              </div>
+              <p class="card-category">Last Month Income</p>
+              <h3 id="lastMonthIncome" class="card-title"></h3>
+            </div>
+            <div class="card-footer">
+            	<span class="text-success stats"><i id ="lastMonthVariance" class="fa fa-long-arrow-up"></i> vs Previous month.</span> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card card-stats">
+            <div class="card-header card-header-info card-header-icon">
+              <div class="card-icon">
+                <i class="fa fa-area-chart"></i>
+              </div>
+              <p class="card-category">Total Area</p>
+              <h3 id="totalArea" class="card-title"></h3>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">update</i> Area in Sq.Ft.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="card">
+            <div class="card-header card-header-warning">
+              <h4 class="card-title">Property Stats</h4>
+            </div>
+            <div class="card-body table-responsive">
+              <table id="property-list" class="property-list-table table table-hover"></table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="display:none;">
+        <div class="col-md-4">
+          <div class="card card-chart">
+            <div class="card-header card-header-success">
+              <div class="ct-chart" id="dailySalesChart"></div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Daily Sales</h4>
+              <p class="card-category">
+                <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">access_time</i> updated 4 minutes ago
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-chart">
+            <div class="card-header card-header-warning">
+              <div class="ct-chart" id="websiteViewsChart"></div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Email Subscriptions</h4>
+              <p class="card-category">Last Campaign Performance</p>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">access_time</i> campaign sent 2 days ago
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-chart">
+            <div class="card-header card-header-danger">
+              <div class="ct-chart" id="completedTasksChart"></div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Completed Tasks</h4>
+              <p class="card-category">Last Campaign Performance</p>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">access_time</i> campaign sent 2 days ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+          
+    </div>
+  </div>
+  <footer class="footer"></footer>
+   
+
+	<div class="modal fade property-name" id="propertyModal" role="dialog" >
+	  <div class="modal-dialog">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title">Property Details</h4>
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+				<div class="modal-body n-p photo-detail clearfix">
+
+					<div class="content">
+						<div class="clearfix">
+							<div>
+								<strong class="no-warp" id="property-name-pop"></strong> 
+								<span class="no-warp" id="property-des-pop"></span>
+							</div>
+							<div>
+								<label>Total Area</label> <span id="avilable-pop"></span>
+							</div>
+							<div>
+								<label> Price </label> <span id="price-pop"></span>
+							</div>
+						</div>
+
+						<div class="">
+							<div class="imageDiv n-p">
+								<div id="chartContainer" class="dialog"
+									style="height: 300px; width: 100%;"></div>
+							</div>
+							<div class="m-l-sm n-p"></div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	    
+	  </div>
+	</div>
+</div>
+
+<script src="/resources/assets/js/dashboard.js"></script>

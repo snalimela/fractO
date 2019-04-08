@@ -1,0 +1,71 @@
+
+<div class="main-panel login">  
+  <div class="myHeader clearfix border-bottom mr-3 ml-3">
+      <h2 class="pull-left">FractO</h2>
+      <a style="float:right;" data-toggle="modal" data-target="#loginModal" class="pull-right login-modal btn btn-outline-secondary">Login</a>
+  </div>
+  
+  <section class="wrapper">
+  	
+    <div class="container-fostrap">
+        <div class="content">
+            <div class="card-container row">
+                
+            </div>
+        </div>
+    </div>
+</section>
+<div style="display: none;" class="pdp row">
+  <div class="col-xs-12 col-sm-3">
+      <div class="card">
+          <a class="img-card">
+          <img src="{img}" />
+        </a>
+          <div class="card-content">
+              <h4 class="card-title">
+                  <a href="{link}"> {property}
+                </a>
+              </h4>
+              <p class="">
+                  {desc}
+              </p>
+            <p>Sq.Ft. Price {price}</p>
+            <p>Available Sq.Ft. {available}</p>
+          </div>
+          <div class="card-read-more p-2">
+              <a href="">Invest</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+</div>
+<div class="modal fade" id="loginModal" role="dialog">
+	  <div class="modal-dialog">
+	  
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div style="padding:0;" class="modal-body">
+	        <div class="login-container">
+    <section class="login" id="login">
+      <header>
+
+        <h3 class="m-0">Login</h3>
+      </header>
+      <form class="login-form">
+        <input type="text" class="login-input" name="username" placeholder="User" required autofocus />
+        <input type="password" class="login-input" name="password" placeholder="Password" required />
+        <div class="submit-container">
+          <button type="submit" class="login-button btn btn-outline login-button mr-2">SIGN IN</button>
+          <button type="button" class="btn btn-default mr-2" data-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </section>
+  </div>
+	      </div>
+	    </div>
+	    
+	  </div>
+	</div>
+<script src="/resources/assets/js/login.js"></script>
